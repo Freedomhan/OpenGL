@@ -155,14 +155,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\资料\glad\glad (4)\src\glad.c" />
-    <ClCompile Include="..\Third\Include\IMGUI\examples\example_glfw_opengl3\main.cpp" />
+    <ClCompile Include="..\Third\Include\IMGUI\examples\example_glfw_opengl3\MainEntry.cpp" />
     <ClCompile Include="..\Third\Include\IMGUI\examples\imgui_impl_glfw.cpp" />
     <ClCompile Include="..\Third\Include\IMGUI\examples\imgui_impl_opengl3.cpp" />
     <ClCompile Include="..\Third\Include\IMGUI\imgui.cpp" />
     <ClCompile Include="..\Third\Include\IMGUI\imgui_demo.cpp" />
     <ClCompile Include="..\Third\Include\IMGUI\imgui_draw.cpp" />
     <ClCompile Include="..\Third\Include\IMGUI\imgui_widgets.cpp" />
-    <ClCompile Include="Src\Entry.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Third\Include\IMGUI\examples\imgui_impl_glfw.h" />
