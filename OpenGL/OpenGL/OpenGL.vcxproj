@@ -109,12 +109,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutionDir)Third\Include\GLAD\include;$(solutionDir)Third\Include\GLFW;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutionDir)Third\Include\GLAD\include;$(solutionDir)Third\Include\GLFW;D:\GitRepository\OpenGL\OpenGL\Third\Include\IMGUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:msvcrtd.lib %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -141,7 +142,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(solutionDir)Third\Include\GLAD\include;$(solutionDir)Third\Include\GLFW;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutionDir)Third\Include\GLAD\include;$(solutionDir)Third\Include\GLFW;D:\GitRepository\OpenGL\OpenGL\Third\Include\IMGUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -149,11 +150,29 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:msvcrtd.lib %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Third\Include\GLAD\include\GLAD\glad.c" />
-    <ClCompile Include="Src\Main.cpp" />
+    <ClCompile Include="..\..\..\..\资料\glad\glad (4)\src\glad.c" />
+    <ClCompile Include="..\Third\Include\IMGUI\examples\example_glfw_opengl3\main.cpp" />
+    <ClCompile Include="..\Third\Include\IMGUI\examples\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\Third\Include\IMGUI\examples\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\Third\Include\IMGUI\imgui.cpp" />
+    <ClCompile Include="..\Third\Include\IMGUI\imgui_demo.cpp" />
+    <ClCompile Include="..\Third\Include\IMGUI\imgui_draw.cpp" />
+    <ClCompile Include="..\Third\Include\IMGUI\imgui_widgets.cpp" />
+    <ClCompile Include="Src\Entry.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Third\Include\IMGUI\examples\imgui_impl_glfw.h" />
+    <ClInclude Include="..\Third\Include\IMGUI\examples\imgui_impl_opengl3.h" />
+    <ClInclude Include="..\Third\Include\IMGUI\imconfig.h" />
+    <ClInclude Include="..\Third\Include\IMGUI\imgui.h" />
+    <ClInclude Include="..\Third\Include\IMGUI\imgui_internal.h" />
+    <ClInclude Include="..\Third\Include\IMGUI\imstb_rectpack.h" />
+    <ClInclude Include="..\Third\Include\IMGUI\imstb_textedit.h" />
+    <ClInclude Include="..\Third\Include\IMGUI\imstb_truetype.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

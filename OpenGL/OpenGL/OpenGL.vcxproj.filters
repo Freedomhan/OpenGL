@@ -15,11 +15,58 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Src\Main.cpp">
+    <ClCompile Include="..\..\..\..\资料\glad\glad (4)\src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\Third\Include\GLAD\include\GLAD\glad.c">
+    <ClCompile Include="..\Third\Include\IMGUI\examples\example_glfw_opengl3\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Src\Entry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third\Include\IMGUI\imgui.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third\Include\IMGUI\imgui_demo.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third\Include\IMGUI\imgui_draw.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third\Include\IMGUI\imgui_widgets.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third\Include\IMGUI\examples\imgui_impl_glfw.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Third\Include\IMGUI\examples\imgui_impl_opengl3.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Third\Include\IMGUI\imconfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third\Include\IMGUI\imgui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third\Include\IMGUI\imgui_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third\Include\IMGUI\imstb_rectpack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third\Include\IMGUI\imstb_textedit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third\Include\IMGUI\imstb_truetype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third\Include\IMGUI\examples\imgui_impl_glfw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Third\Include\IMGUI\examples\imgui_impl_opengl3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
