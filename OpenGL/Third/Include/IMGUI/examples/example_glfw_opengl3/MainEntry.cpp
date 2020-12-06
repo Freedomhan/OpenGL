@@ -65,7 +65,7 @@ struct ExampleAppLog {
     }
 
     void Draw(const char* title, bool* p_open = NULL) {
-        if (!ImGui::Begin(title)) {
+        if (!ImGui::Begin(title,p_open)) {
             ImGui::End();
             return;
         }
@@ -77,8 +77,13 @@ struct ExampleAppLog {
         }
 
         // Main window
-        if (ImGui::Button("Options"))
-            ImGui::OpenPopup("Options");
+        /*if (ImGui::Button("Options"))
+            ImGui::OpenPopup("Options");*/
+        bool debug = ImGui::Button("Debug");
+        ImGui::SameLine();
+        bool warning = ImGui::Button("Warning");
+        ImGui::SameLine();
+        bool error = ImGui::Button("Error");
         ImGui::SameLine();
         bool clear = ImGui::Button("Clear");
         ImGui::SameLine();
@@ -89,10 +94,21 @@ struct ExampleAppLog {
         ImGui::Separator();
         ImGui::BeginChild("scrolling", ImVec2(0, 0), false, ImGuiWindowFlags_HorizontalScrollbar);
 
-        if (clear)
+        if (debug) {
+
+        }
+        if (warning) {
+
+        }
+        if (error) {
+
+        }
+        if (clear) {
             Clear();
-        if (copy)
+        }
+        if (copy) {
             ImGui::LogToClipboard();
+        }
 
         ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(0, 0));
         const char* buf = Buf.begin();
@@ -385,7 +401,20 @@ void processInput(GLFWwindow* window) {
 
 // Demonstrate creating a simple log window with basic filtering.
 void ShowExampleAppLog(bool* p_open) {
-    ExampleAppLog log;
+    static ExampleAppLog log;
+    static bool logTest = true;
+    ImGui::SetNextWindowSize(ImVec2(500, 400), ImGuiCond_FirstUseEver);
+    if (logTest) {
+        log.AddLog("Hanshaoqiu\n");
+        log.AddLog("Hanshaoqiu\n");
+        log.AddLog("Hanshaoqiu\n");
+        log.AddLog("Hanshaoqiu\n");
+        log.AddLog(u8"º«ÉÙÇñ\n");
+        log.AddLog(u8"º«ÉÙÇñ\n");
+        log.AddLog(u8"º«ÉÙÇñ\n");
+        log.AddLog(u8"º«ÉÙÇñ\n");
+        logTest = false;
+    }
     log.Draw("Log", p_open);
 }
 
