@@ -154,7 +154,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\资料\glad\glad (4)\src\glad.c" />
+    <ClCompile Include="..\..\..\..\File\glad\glad (4)\src\glad.c" />
     <ClCompile Include="..\Third\Include\IMGUI\examples\example_glfw_opengl3\MainEntry.cpp" />
     <ClCompile Include="..\Third\Include\IMGUI\examples\imgui_impl_glfw.cpp" />
     <ClCompile Include="..\Third\Include\IMGUI\examples\imgui_impl_opengl3.cpp" />
@@ -162,6 +162,7 @@
     <ClCompile Include="..\Third\Include\IMGUI\imgui_demo.cpp" />
     <ClCompile Include="..\Third\Include\IMGUI\imgui_draw.cpp" />
     <ClCompile Include="..\Third\Include\IMGUI\imgui_widgets.cpp" />
+    <ClCompile Include="Src\stb\stb_image.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Third\Include\IMGUI\examples\imgui_impl_glfw.h" />
@@ -172,6 +173,7 @@
     <ClInclude Include="..\Third\Include\IMGUI\imstb_rectpack.h" />
     <ClInclude Include="..\Third\Include\IMGUI\imstb_textedit.h" />
     <ClInclude Include="..\Third\Include\IMGUI\imstb_truetype.h" />
+    <ClInclude Include="Src\stb\stb_image.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

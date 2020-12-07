@@ -7,6 +7,12 @@
     <Filter Include="Glad">
       <UniqueIdentifier>{f188ab5f-a4e2-46a4-a756-217aeb6ad7a7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{37b3e2fe-e051-45e8-8dc8-ab0a37750f2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stb">
+      <UniqueIdentifier>{329483a9-dd01-4b12-92f9-1cd8cece8b0b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Third\Include\IMGUI\imgui.cpp">
@@ -27,10 +33,13 @@
     <ClCompile Include="..\Third\Include\IMGUI\imgui_widgets.cpp">
       <Filter>Imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\资料\glad\glad (4)\src\glad.c">
+    <ClCompile Include="..\Third\Include\IMGUI\examples\example_glfw_opengl3\MainEntry.cpp" />
+    <ClCompile Include="Src\stb\stb_image.cpp">
+      <Filter>Stb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\File\glad\glad (4)\src\glad.c">
       <Filter>Glad</Filter>
     </ClCompile>
-    <ClCompile Include="..\Third\Include\IMGUI\examples\example_glfw_opengl3\MainEntry.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Third\Include\IMGUI\imconfig.h">
@@ -56,6 +65,9 @@
     </ClInclude>
     <ClInclude Include="..\Third\Include\IMGUI\imstb_truetype.h">
       <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\stb\stb_image.h">
+      <Filter>Stb</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
